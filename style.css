@@ -1,0 +1,71 @@
+html {
+  box-sizing: border-box;
+  background: url(img/Simspons_Clouds.jpg) #9ADBFB;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  height: 100%;
+  width: 80%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .quotebox {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+#logo {
+  width: 80%;
+  display: block;
+  height: auto;
+  margin: 30px auto;
+}
+.quotebox {
+  border: solid lightgrey 2px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  background-color: rgba(255,255,255,0.75);
+  padding: 0px 10px;
+  text-align: justify;
+}
+#character {
+  text-align: right;
+  font-weight: bold;
+}
+/* BUTTONS */
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#randQuo {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+.twitter {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+#episode {
+  font-size: 1rem;
+}
