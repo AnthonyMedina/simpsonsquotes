@@ -35,7 +35,8 @@ body {
   width: 80%;
   display: block;
   height: auto;
-  margin: 30px auto;
+  margin: 0 auto 30px auto;
+  padding-top: 30px;
 }
 .quotebox {
   border: solid lightgrey 2px;
