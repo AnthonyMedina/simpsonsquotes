@@ -28,7 +28,7 @@ let tweet = document.getElementById('tweet');
 })();
 
 // generate new quote when button is clicked
-randQuo.addEventListener('click', function () {
+randQuo.addEventListener('click', () => {
   newQuo(quotesArray);
 });
 
@@ -49,8 +49,8 @@ function newQuo(arr) {
 
 // set tweet content to match random quote
 function setTweetContent() {
-  let tweetText = 'https://twitter.com/intent/tweet?text=' + quote.innerText
-  + '%0D' + character.innerText + ', ' + episode.innerText;
+  let tweetText = `https://twitter.com/intent/tweet?text=${quote.innerText}%0D
+  ${character.innerText}, ${episode.innerText}`;
 
   tweet.setAttribute('href', tweetText);
 }
