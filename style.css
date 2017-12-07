@@ -43,15 +43,20 @@ body {
   border-radius: 10px;
   font-size: 1.5rem;
   background-color: rgba(255,255,255,0.75);
-  padding: 0px 10px;
+  padding: 10px;
   text-align: left;
+}
+p {
+  margin: 0;
 }
 #character {
   text-align: right;
   font-weight: bold;
+  margin: 5px 0;
 }
 /* BUTTONS */
 .buttons {
+  height: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -59,15 +64,15 @@ body {
 }
 #randQuo {
   width: 50px;
-  height: auto;
-  cursor: pointer;
-}
-.twitter {
-  width: 50px;
-  height: auto;
+  height: 50px;
   cursor: pointer;
 }
 #episode {
   font-size: 1rem;
   text-align: center;
+}
+#tweet {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
