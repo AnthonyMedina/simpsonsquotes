@@ -23,7 +23,7 @@ let episode = document.getElementById('episode');
 let tweet = document.getElementById('tweet');
 
 (function () {
-  newQuo(quotesArray, quote, character, episode);
+  newQuo(quotesArray);
 })();
 
 randQuo.addEventListener('click', function () {
@@ -34,14 +34,14 @@ function randomGen(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function newQuo(quotesArray, quote, character, episode) {
-  let newQuote = quotesArray[randomGen(0, quotesArray.length - 1)];
+function newQuo(arr) {
+  let newQuote = arr[randomGen(0, arr.length - 1)];
   quote.innerText = newQuote.quote;
   character.innerText = '- ' + newQuote.character;
   episode.innerText = newQuote.episode;
 
-  // twitter button
   let tweetText = 'https://twitter.com/intent/tweet?text=' + newQuote.quote
-      + '%0D' + character.innerText + ', ' + newQuote.episode;
+  + '%0D' + newQuote.character + ', ' + newQuote.episode;
+
   tweet.setAttribute('href', tweetText);
 }
