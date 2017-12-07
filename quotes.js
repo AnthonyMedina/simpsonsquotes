@@ -2,17 +2,17 @@ var quotesArray = [
   {
     quote: '\“I remember another gentle visitor from the heavens. Who came to earth... and then died... only to be brought back to life again. And his name was: E.T, the Extra-Terrestrial. I love that little guy.\”',
     character: 'Rev. Lovejoy',
-    episode: 'The Springfield Files (S08E10)',
+    episode: 'The Springfield Files\n(S08E10)',
   },
   {
     quote: '\“Hi, Lisa!  Hi, Super Nintendo Chalmers! I\'m learn-ding.\”',
     character: 'Ralph Wiggum',
-    episode: 'Lisa gets an \“A\” (S10E07)',
+    episode: 'Lisa gets an \“A\”\n(S10E07)',
   },
   {
     quote: '\“Yup. They called me \‘Kid Gorgeous\’. Later on, it was \‘Kid Presentable\’. Then \‘Kid Gruesome\’. And finally, \‘Kid Moe\’.\”',
     character: 'Moe Szyslak',
-    episode: 'The Homer They Fall (S08E03)',
+    episode: 'The Homer They Fall\n(S08E03)',
   },
 ];
 
