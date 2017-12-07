@@ -23,14 +23,12 @@ let episode = document.getElementById('episode');
 let tweet = document.getElementById('tweet');
 
 (function () {
-
   newQuo(quotesArray, quote, character, episode);
-
-  randQuo.addEventListener('click', function () {
-    newQuo(quotesArray, quote, character, episode);
-  });
-
 })();
+
+randQuo.addEventListener('click', function () {
+  newQuo(quotesArray, quote, character, episode);
+});
 
 function randomGen(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
