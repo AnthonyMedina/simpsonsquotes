@@ -40,8 +40,12 @@ function newQuo(arr) {
   character.innerText = '- ' + newQuote.character;
   episode.innerText = newQuote.episode;
 
-  let tweetText = 'https://twitter.com/intent/tweet?text=' + newQuote.quote
-  + '%0D' + newQuote.character + ', ' + newQuote.episode;
+  setTweetContent();
+}
+
+function setTweetContent() {
+  let tweetText = 'https://twitter.com/intent/tweet?text=' + quote.innerText
+  + '%0D' + character.innerText + ', ' + episode.innerText;
 
   tweet.setAttribute('href', tweetText);
 }
