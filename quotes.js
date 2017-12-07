@@ -16,11 +16,13 @@ var quotesArray = [
   },
 ];
 
+let randQuo = document.getElementById('randQuo');
+let quote = document.getElementById('quote');
+let character = document.getElementById('character');
+let episode = document.getElementById('episode');
+let tweet = document.getElementById('tweet');
+
 (function () {
-  var randQuo = document.getElementById('randQuo');
-  var quote = document.getElementById('quote');
-  var character = document.getElementById('character');
-  var episode = document.getElementById('episode');
 
   newQuo(quotesArray, quote, character, episode);
 
@@ -28,21 +30,20 @@ var quotesArray = [
     newQuo(quotesArray, quote, character, episode);
   });
 
-  function newQuo(quotesArray, quote, character, episode) {
-    var newQuote = quotesArray[randomGen(0, quotesArray.length - 1)];
-
-    quote.innerText = newQuote.quote;
-    character.innerText = '- ' + newQuote.character;
-    episode.innerText = newQuote.episode;
-
-    // twitter button
-    let tweet = document.getElementById('tweet');
-    let tweetText = 'https://twitter.com/intent/tweet?text=' + newQuote.quote + '%0D' + character.innerText + ', ' + newQuote.episode;
-    tweet.setAttribute('href', tweetText);
-
-    function randomGen(min, max) {
-      return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-  }
-
 })();
+
+function randomGen(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function newQuo(quotesArray, quote, character, episode) {
+  let newQuote = quotesArray[randomGen(0, quotesArray.length - 1)];
+  quote.innerText = newQuote.quote;
+  character.innerText = '- ' + newQuote.character;
+  episode.innerText = newQuote.episode;
+
+  // twitter button
+  let tweetText = 'https://twitter.com/intent/tweet?text=' + newQuote.quote
+      + '%0D' + character.innerText + ', ' + newQuote.episode;
+  tweet.setAttribute('href', tweetText);
+}
