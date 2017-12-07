@@ -34,12 +34,12 @@ randQuo.addEventListener('click', function () {
 
 // generate random number
 function randomGen(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
 // set new elements to contain quote info
 function newQuo(arr) {
-  let newQuote = arr[randomGen(0, arr.length - 1)];
+  let newQuote = arr[randomGen(0, arr.length)];
   quote.innerText = newQuote.quote;
   character.innerText = '- ' + newQuote.character;
   episode.innerText = newQuote.episode;
