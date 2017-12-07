@@ -22,18 +22,22 @@ let character = document.getElementById('character');
 let episode = document.getElementById('episode');
 let tweet = document.getElementById('tweet');
 
+// generate random quote on page load
 (function () {
   newQuo(quotesArray);
 })();
 
+// generate new quote when button is clicked
 randQuo.addEventListener('click', function () {
-  newQuo(quotesArray, quote, character, episode);
+  newQuo(quotesArray);
 });
 
+// generate random number
 function randomGen(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+// set new elements to contain quote info
 function newQuo(arr) {
   let newQuote = arr[randomGen(0, arr.length - 1)];
   quote.innerText = newQuote.quote;
@@ -43,6 +47,7 @@ function newQuo(arr) {
   setTweetContent();
 }
 
+// set tweet content to match random quote
 function setTweetContent() {
   let tweetText = 'https://twitter.com/intent/tweet?text=' + quote.innerText
   + '%0D' + character.innerText + ', ' + episode.innerText;
