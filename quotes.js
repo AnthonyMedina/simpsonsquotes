@@ -7,7 +7,7 @@ var quotesArray = [
   {
     quote: '\“Hi, Lisa!  Hi, Super Nintendo Chalmers! I\'m learn-ding.\”',
     character: 'Ralph Wiggum',
-    episode: 'Lisa gets an "A" (S10E07)',
+    episode: 'Lisa gets an \“A\” (S10E07)',
   },
   {
     quote: '\“Yup. They called me \‘Kid Gorgeous\’. Later on, it was \‘Kid Presentable\’. Then \‘Kid Gruesome\’. And finally, \‘Kid Moe\’.\”',
